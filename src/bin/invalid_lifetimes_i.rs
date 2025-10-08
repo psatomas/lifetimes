@@ -6,6 +6,6 @@ fn main() {
             String::from("Barcelona"),
         ];
 
-        &cities[0..2]
+        //&cities[0..2]
     };
 }
