@@ -8,7 +8,10 @@ fn main() {
         String::from("New York"),
         String::from("Barcelona"),
     ];
-    let two_cities = select_first_two_elements(&cities);
+    let two_cities = {
+        let cities_reference = &cities;
+        select_first_two_elements(&cities_reference)
+    };
     println!("{two_cities:?}");
 
     {
